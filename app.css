@@ -1,0 +1,108 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+
+.head{
+    color: #fff;
+    font-weight: bold;
+    font-size: large;
+    letter-spacing: 2.5px;
+    margin: 5px;
+}
+
+.timer-frame{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    border-radius: 15px;
+    width: 235px;
+    box-shadow: 0 0 30px 10px rgba(0, 0, 0, .2), 0 0 30px 10px rgba(0, 0, 0, .2);
+}
+
+.record{
+    display: flex;
+    justify-content: center;
+    background: #4C00FF;
+    width: 90%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+}
+
+.record div{
+    margin: 0 16px;
+    font-size: x-large;
+    width: 100%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background: #4C00FF;
+    cursor: default;
+}
+
+div::selection{
+    display: none;
+}
+
+.sec{
+    padding: 30px;
+    font-size: 4rem;
+}
+
+.timer-frame .btn{
+    background: #4C00FF;
+    border-radius: 15px;
+    border: none;
+    color: #fff;
+    width: 90%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: large;
+}
+
+.btn{
+    cursor: pointer;
+}
+
+.btn:active{
+    transform: scale(0.97);
+}
+
+.timer-frame .btn:hover{
+    background: #2b008f;
+}
+
+.timer-frame .btn:active{
+    transform: scale(0.985);
+}
+
+.buttons .btn{
+    background: #fff;
+    border: none;
+    padding: 10px 30px;
+    margin: 5px 0;
+    font-weight: bold;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.reset{
+    border-bottom-left-radius: 10px;
+}
+
+.stop{
+    border-bottom-right-radius: 10px;
+}
