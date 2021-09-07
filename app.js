@@ -23,6 +23,8 @@ startTimer.addEventListener('click', () => {
             min.innerText = 0;
         };
 
+        startTimer.setAttribute('disabled', 'disabled');
+
     }, 1000);
 
 });
@@ -34,9 +36,12 @@ reset.addEventListener('click', () => {
     min.innerText = '00';
     sec.innerText = 0;
     hr.innerText = '00';
+
+    startTimer.removeAttribute('disabled');
 });
 
 stop.addEventListener('click', () => {
     
     clearInterval(intervalID);
+    startTimer.removeAttribute('disabled');
 });
