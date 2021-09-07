@@ -4,6 +4,7 @@ let hr = document.getElementById('hr');
 
 const reset = document.getElementById('reset');
 const stop = document.getElementById('stop');
+const frame = document.getElementById('frame');
 
 // START TIMER BUTTON EVENT
 let startTimer = document.getElementById('start-timer');
@@ -11,7 +12,7 @@ let startTimer = document.getElementById('start-timer');
 let intervalID;
 
 startTimer.addEventListener('click', () => {
-
+    
     intervalID = setInterval( () => {
         sec.innerText ++;
 
@@ -25,7 +26,11 @@ startTimer.addEventListener('click', () => {
 
         startTimer.setAttribute('disabled', 'disabled');
 
+        frame.classList.add('pulse');
+        stop.classList.remove('scale');
+
     }, 1000);
+
 
 });
 
@@ -38,10 +43,17 @@ reset.addEventListener('click', () => {
     hr.innerText = '00';
 
     startTimer.removeAttribute('disabled');
+    frame.classList.remove('pulse');
+    stop.classList.remove('scale');
 });
 
 stop.addEventListener('click', () => {
     
     clearInterval(intervalID);
     startTimer.removeAttribute('disabled');
+    frame.classList.remove('pulse');
+
+    if(sec.innerText != 0){
+        stop.classList.add('scale');
+    }
 });
