@@ -118,7 +118,7 @@ div::selection{
 
 .scale{
     transform: scale(1);
-	animation: pulse 2s infinite;
+	animation: scale 2s infinite;
 }
 
 
