@@ -22,7 +22,7 @@
     background: #fff;
     border-radius: 15px;
     width: 235px;
-    box-shadow: 0 0 30px 10px rgba(0, 0, 0, .2), 0 0 30px 10px rgba(0, 0, 0, .2);
+    box-shadow: 0 0 30px 10px rgba(0, 0, 0, .05), 0 0 30px 10px rgba(0, 0, 0, .05);
 }
 
 .record{
@@ -105,4 +105,8 @@ div::selection{
 
 .stop{
     border-bottom-right-radius: 10px;
+}
+
+.unit{
+    font-size: small;
 }

@@ -16,7 +16,7 @@ startTimer.addEventListener('click', () => {
         sec.innerText ++;
 
         if(sec.innerText == 60){
-            min.innerText ++;
+            min.innerText ++ + ' min';
             sec.innerText = 0 ;
         } else if(min.innerText == 60){
             hr.innerText ++;
