@@ -1,0 +1,21 @@
+{
+	"name": "Stopwatch App",
+
+	"short_name": "Stop Watch",
+
+	"description": "A stopwatch/timer to track your activities",
+
+	"icons": [
+		{
+			"src": "./icon.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	],
+
+	"start_url": "./index.html",
+
+	"display": "fullscreen",
+	
+	"background": "#4C00FF"
+}
